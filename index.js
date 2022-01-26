@@ -8,8 +8,9 @@
  */
 function trimProperties(obj) {
   // ✨ implement
+  Object.keys(obj).forEach(k => obj[k] = obj[k].trim());
+  return obj
 }
-
 /**
  * [Exercise 2] trimPropertiesMutation trims in place the properties of an object
  * @param {object} obj - an object with properties that are strings

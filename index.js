@@ -22,6 +22,8 @@ function trimProperties(obj) {
  */
 function trimPropertiesMutation(obj) {
   // ✨ implement
+  Object.keys(obj).forEach(k => obj[k] = obj[k].trim());
+  return obj
 }
 
 /**
